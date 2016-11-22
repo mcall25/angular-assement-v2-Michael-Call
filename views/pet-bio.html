@@ -14,5 +14,21 @@
 
         <!--pet Age-->
         <div class="pet-grid__price">{{details.age}}</div>
+
     </div>
+
+    <!-- <div class="checkout_button" ng-hide="chart" ng-click="chart=true">
+      Buy
+    </div> -->
+
+    <div  ng-show="chart"  class="main-chart_container">
+      <div class='title2' ng-click="chart=false">{{details.name}}</div>
+      <div class='price'><button ng-click="post(data1)" type="button" name="button">Buy</button>$200</div>
+      <div class='email'> Email: <input ng-model="data1" id="inputforchart" type="text" name="name"  placeholder="Email" value=""></div>
+      <div class='email'> First Name: <input  ng-model="data2" id="inputforchart" type="text" name="name"  placeholder="First Name" value=""></div>
+      <div class='email'> Last Name: <input  ng-model="data3" id="inputforchart"  type="text" name="name"  placeholder="Last Name" value=""></div>
+      <div class='email'> Phone: <input  ng-model="data4" id="inputforchart"  type="text" name="name"  placeholder="Phone" value=""></div>
+      <div class='email'> id: <input  ng-model="data5" id="inputforchart"  type="text" name="name"  placeholder="Phone" value=""></div>
+    </div>
+
 </div>

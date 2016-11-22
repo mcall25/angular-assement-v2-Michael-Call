@@ -1,0 +1,18 @@
+CREATE TABLE customer
+(
+  id text PRIMARY KEY,
+  email VARCHAR(100),
+  fname VARCHAR(100),
+  lname VARCHAR(100),
+  phone varchar(22)
+);
+
+
+CREATE TABLE orders
+(
+  id SERIAL PRIMARY KEY,
+  product VARCHAR(40),
+  price integer,
+  img TEXT,
+  customer_id text references customer(id)
+);

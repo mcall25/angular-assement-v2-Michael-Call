@@ -1,0 +1,28 @@
+{
+  "name": "angular-assessment-v2",
+  "version": "1.0.0",
+  "description": "Fork and clone this repo before step 1.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "massive": "^2.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcall25/angular-assement-v2-Michael-Call.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcall25/angular-assement-v2-Michael-Call/issues"
+  },
+  "homepage": "https://github.com/mcall25/angular-assement-v2-Michael-Call#readme"
+}

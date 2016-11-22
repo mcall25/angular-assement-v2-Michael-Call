@@ -19,4 +19,16 @@ angular.module('app1').service('service', function($http){
               return response.data;
         });
       }
+      
+      this.post = function(data1) {
+        console.log(data1);
+        return $http({
+            method: 'POST',
+            url: 'http://127.0.0.1:8080/orders',
+            data: {obj: data1}
+            }).then(function(response){
+              return response.data;
+        });
+
+      }
 })
