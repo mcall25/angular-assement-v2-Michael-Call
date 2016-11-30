@@ -2,7 +2,7 @@ Michael's Movie store
 
 Below are the steps I took to make this simple angular app.
 
-This store is built in angular 1. it used an api request to a node server to get all the movie information. then, with the use of the mvc framework and directive I was able to display all the information in a nice fashion 
+This store is built in angular 1. I used an api request to a node server to get all the movie information. then, with the use of the mvc framework and directives I was able to display all the information in a nice fashion. 
 
 ``1``
  Create a basic angular app that includes a mainCtrl, mainService, app.js and routes.js. The index.html file is included in this repo so you don't need to add one.
