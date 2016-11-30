@@ -2,15 +2,15 @@
 
     <!--pet Image-->
     <a class="pet-grid__pet">
-        <img class="pet-grid__img"  sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw"  ng-src="{{details.image}}" alt="" src="{{vm.pet.image}}">
+        <img class="pet-grid__img"  sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw"  ng-src="{{details[0].img}}" alt="no" >
     </a>
 
     <!--pet Meta-->
     <div class="pet-grid__meta">
         <!-- pet Name -->
-        <h3 class="pet-grid__name"><a>{{details.name}}</a></h3>
+        <h3 class="pet-grid__name"><a>{{details[0].name}}</a></h3>
         <!--pet Breed-->
-        <h4 class="pet-grid__sub">{{details.breed}}</h4>
+        <h4 class="pet-grid__sub">${{details[0].price}}</h4>
 
         <!--pet Age-->
         <div class="pet-grid__price">{{details.age}}</div>
@@ -21,7 +21,7 @@
       Buy
     </div> -->
 
-    <div  ng-show="chart"  class="main-chart_container">
+    <!-- <div  ng-show="chart"  class="main-chart_container">
       <div class='title2' ng-click="chart=false">{{details.name}}</div>
       <div class='price'><button ng-click="post(data1)" type="button" name="button">Buy</button>$200</div>
       <div class='email'> Email: <input ng-model="data1" id="inputforchart" type="text" name="name"  placeholder="Email" value=""></div>
@@ -29,6 +29,6 @@
       <div class='email'> Last Name: <input  ng-model="data3" id="inputforchart"  type="text" name="name"  placeholder="Last Name" value=""></div>
       <div class='email'> Phone: <input  ng-model="data4" id="inputforchart"  type="text" name="name"  placeholder="Phone" value=""></div>
       <div class='email'> id: <input  ng-model="data5" id="inputforchart"  type="text" name="name"  placeholder="Phone" value=""></div>
-    </div>
+    </div> -->
 
 </div>

@@ -10,9 +10,9 @@ var config = require('./config/config.js');
 
 var app = module.exports = express();
 
-var db = massive.connectSync({ db : "petstore"});
+// var db = massive.connectSync({ db : "petstore"});
 // the app.set has to go before the controller requiremnt in node
-app.set('db', db);
+// app.set('db', db);
 
 ///Controllers///
 var controller = require('./controller/main.js');
@@ -31,16 +31,12 @@ app.use(session({
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 // I might to have the right file path here
-app.use(express.static(__dirname + '/js'));
+app.use(express.static(__dirname + '/'));
 
 
 
-app.post('/customer', controller.addCustomer);
-// make sure the data is following all the way through
-app.post('/orders', function(req, res, next){
-  res.status(200).json(req.body)
-});
-// app.post('/orders', console.log('test'));
+app.get('/api/movies', controller.getMovies);
+app.get('/api/m/:id', controller.getMovies2);
 
 
 

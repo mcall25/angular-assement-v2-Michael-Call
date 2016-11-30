@@ -1,7 +1,7 @@
         <!--pet Image-->
         <!--pet Image click collapse the image-->
         <a class="pet-grid__pet" >
-            <img ng-hide='pix' ng-click='pix=true' class="pet-grid__img"   sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" ng-src='{{vidgame.image}}' alt="">
+            <img ng-hide='pix' ng-click='pix=true' class="pet-grid__img"   sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" ng-src='{{vidgame.img}}' alt="">
         </a>
         <a  ng-show='pix' ng-click='pix=false' class="pet-grid__pet">
             show image
@@ -14,8 +14,8 @@
             <h3 class="pet-grid__name"><a ui-sref="details({id: vidgame.id})">{{vidgame.name}}</a></h3>
 
             <!--pet Breed-->
-            <h4 class="pet-grid__sub">{{vidgame.breed}}</h4>
+            <!-- <h4 class="pet-grid__sub">{{vidgame.price}}</h4> -->
 
             <!--pet Age-->
-            <div class="pet-grid__price">{{vidgame.age}} in dog years</div>
+            <div class="pet-grid__price">${{vidgame.price}}</div>
         </div>

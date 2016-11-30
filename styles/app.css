@@ -1,3 +1,21 @@
+/*.pet-grid__pet {
+    background: #f7f7f7;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    height: 20vh;
+    width: 15vw;
+
+}*/
+
+.pet-grid__pet {
+    background: #f7f7f7;
+    /*display: block;*/
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
 .site-main {
     background: #fff;
     padding-right: 8px;
