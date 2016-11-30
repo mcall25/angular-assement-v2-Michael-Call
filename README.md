@@ -2,6 +2,8 @@ Michael's Movie store
 
 Below are the steps I took to make this simple angular app.
 
+This store is built in angular 1. it used an api request to a node server to get all the movie information. then, with the use of the mvc framework and directive I was able to display all the information in a nice fashion 
+
 ``1``
  Create a basic angular app that includes a mainCtrl, mainService, app.js and routes.js. The index.html file is included in this repo so you don't need to add one.
 
@@ -46,5 +48,3 @@ Host your solution on github pages.
 * Type git push -u origin gh-pages
 * Find your account name on github and insert it into this url http://YourGithubAccountName.github.io/angular-assessment
 Open that url to make sure it works, then send that url to your assigned mentor!
-
-# Congratulations! you have finished the assessment
